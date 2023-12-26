@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "presence"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+scylla-driver = "^3.26.4"
+fastapi = "^0.106.0"
+uvicorn = {extras = ["standard"], version = "^0.25.0"}
+python-socketio = "^5.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "presence.main:start"
